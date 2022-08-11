@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Фотогалерея NASA | Обои для рабочего стола</title>
+        <link rel="shortcut icon" href="https://www.nasa.gov/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="header-block">
+            <div class="header-block-title">
+                <div>National Aeronautics and Space Administration</div>
+                <img src="images/nasa-logo.svg">
+            </div>
+            <h1>Фотогалерея NASA</h1>
+            <div class="header-block-links">
+                <a href="https://www.nasa.gov/" id="first">Официальный сайт</a>
+                <a href="https://www.nasa.gov/mission_pages/station/images/index.html" id="second">Все фотографии</a>
+            </div>
+        </div>
+        <div class="body-gallery">
+            <button id="prev" class="btn-nav"><</button>
+            <div class="body-gallery-block">
+                <div class="body-gallery-block-img-label">
+                    <a href="images/1.jpg" target="_blank">
+                        <img src="images/1.jpg" id="img1" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+                <div class="body-gallery-block-img-label">
+                    <a href="images/2.jpg" target="_blank">
+                        <img src="images/2.jpg" id="img2" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+                <div class="body-gallery-block-img-label">
+                    <a href="images/3.jpg" target="_blank">
+                        <img src="images/3.jpg" id="img3" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+                <div class="body-gallery-block-img-label">
+                    <a href="images/4.jpg" target="_blank">
+                        <img src="images/4.jpg" id="img4" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+                <div class="body-gallery-block-img-label">
+                    <a href="images/5.jpg" target="_blank">
+                        <img src="images/5.jpg" id="img5" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+                <div class="body-gallery-block-img-label">
+                    <a href="images/6.jpg" target="_blank">
+                        <img src="images/6.jpg" id="img6" onload = "showThis(this)" onerror = "hideThis(this)">
+                        <div>Смотреть в полном разрешении</div>
+                    </a>
+                </div>
+            </div>
+            <button id="next" class="btn-nav">></button>
+        </div>
+        <div class="footer-block">
+            <div class="footer-block-rnd-generator">
+                <button class="footer-block-rnd-generator-btn">Хочу рандомное число!</button>
+                <div class="footer-block-rnd-generator-result">Результат будет тут</div>
+            </div>
+            <div class="footer-block-credits">
+                <img src="images/nasa-logo.svg">
+                <ul>
+                    <li>Сверстал сайт: Кирюша</li>
+                    <li>Учусь JavaScript, CSS, HTML</li>
+                    <li>Все права принадлежат правообладателям (с) Кэп</li>
+                </ul>
+            </div>
+        </div>
+    <script src="scripts/rnd-generator.js"></script> 
+    <script src="scripts/gallery.js"></script>
+    <script>
+        function hideThis(elem){
+            elem.parentNode.parentNode.style.visibility = "hidden";
+        }
+
+        function showThis(elem){
+            elem.parentNode.parentNode.style.visibility = "visible";
+        }
+    </script>
+    </body>
+</html>
